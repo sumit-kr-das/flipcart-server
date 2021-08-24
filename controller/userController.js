@@ -14,3 +14,16 @@ export const userSignup = async (req,res) =>{
         console.log(`Error is: ${err.message}`);
     }
 };
+
+export const userLogin = async(req,res) =>{
+    try{
+        let user = await User.findOne({username:req.body.username, password:req.body.password});
+        if(user){
+            res.status(200).json(`${req.body.username} login successful`);
+        }else{
+            res.status(400).json(`Invali password/username`);
+        }
+    }catch(err){
+        console.log(`Error is: ${err.message}`);
+    }
+}

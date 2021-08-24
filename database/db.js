@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const connection = async (username,password) => {
     const URL =
-  `mongodb+srv://${username}:${password}@flipcartclone.rnhbh.mongodb.net/flipcartclone?retryWrites=true&w=majority`;
+  `mongodb+srv://${username}:${password}@cloneflipecom.yaxgf.mongodb.net/cloneFlipEcom?retryWrites=true&w=majority`;
   try {
     await mongoose.connect(URL, {
       useNewUrlParser: true,
