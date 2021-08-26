@@ -13,7 +13,8 @@ export const getProductByID = async (req,res) =>{
     try{
         const product = await Product.findOne({'id':req.params.id})
         res.json(product);
-    }catch(err){
+    }catch(err){ 
         console.log("Error is ~ ",err.message);
     }
 }
+           
