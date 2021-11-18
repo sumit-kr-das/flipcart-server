@@ -13,8 +13,7 @@ git clone https://github.com/sumit-kr-das/flipcart-server
 **3.** Navigate to the project directory.
 
 ```bash
-cd 
-flipcart-server
+cd flipcart-server
 ```
 
 **4.** Make changes in source code.
